@@ -1,0 +1,7 @@
+---
+- hosts: nodes
+  tasks:
+    - name: install ntp
+      package:
+        name: ntp
+        state: present

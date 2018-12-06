@@ -1,0 +1,8 @@
+---
+- hosts: nodes
+  tasks:
+    - name: touch a file inside node machines
+      file:
+        path: /home/ubuntu/training-test.txt
+        state: touch
+        mode: 777
